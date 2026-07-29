@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Please cite the archived repository release and the associated article."
+title: "SPoS-MSC Reproducibility Package"
+type: software
+version: 0.1.0
+date-released: 2026-07-29
+authors:
+  - family-names: Deval
+    given-names: Vipin
+  - family-names: Dwivedi
+    given-names: Vimal
+  - family-names: Norta
+    given-names: Alex
+  - family-names: Draheim
+    given-names: Dirk
+abstract: >-
+  Formal CPN models, prototype implementation, scenario data, analysis scripts,
+  and figures for executable modelling of a scalable mobile smart-contract
+  lifecycle with incentive-aware Proof-of-Stake governance.
+keywords:
+  - blockchain simulation
+  - Coloured Petri Nets
+  - mobile smart contracts
+  - Proof-of-Stake governance
+  - sharded blockchains
+  - validator decentralisation
+license: MIT

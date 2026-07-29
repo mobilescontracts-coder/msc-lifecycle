@@ -1,0 +1,22 @@
+SPoS-MSC prototype run log
+=========================
+
+Command executed:
+python scripts/run_scenarios.py --runs 100 --seed 626 --output outputs
+
+Generated rows:
+700 run rows = 7 scenarios x 100 runs.
+
+Prototype output files:
+- Q1_Q7_spos_msc_run_matrix.csv
+- Q1_Q7_spos_msc_summary.csv
+- Q1_Q7_spos_msc_results.xlsx
+
+Additional analysis files:
+- Q1_Q7_spos_msc_statistical_summary.csv
+- related_work_comparison_input_data.csv
+- line_graph_latex_code.tex
+- line_graphs/*.png and *.pdf
+
+Research note:
+The related-work throughput comparison is contextual only. External systems report TPS under different environments, whereas SPoS-MSC reports receipts per logical time unit in the research prototype.

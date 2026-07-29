@@ -1,0 +1,21 @@
+{
+  "title": "SPoS-MSC Reproducibility Package",
+  "description": "Formal CPN models, prototype implementation, scenario data, analysis scripts, and figures for executable modelling of a scalable mobile smart-contract lifecycle with incentive-aware Proof-of-Stake governance.",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [
+    {"name": "Deval, Vipin"},
+    {"name": "Dwivedi, Vimal"},
+    {"name": "Norta, Alex"},
+    {"name": "Draheim, Dirk"}
+  ],
+  "keywords": [
+    "blockchain simulation",
+    "Coloured Petri Nets",
+    "mobile smart contracts",
+    "Proof-of-Stake governance",
+    "sharded blockchains",
+    "validator decentralisation"
+  ],
+  "related_identifiers": []
+}

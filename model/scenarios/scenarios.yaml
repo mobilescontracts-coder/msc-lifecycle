@@ -1,0 +1,29 @@
+metadata:
+  family: Q1-Q7
+  prototype_seed: 626
+  runs_per_scenario: 100
+  note: >-
+    Scenario descriptions are shared by the formal-model and prototype layers.
+    Exact native CPN initial markings must be added with the integrated model.
+scenarios:
+  Q1:
+    name: Normal mobile contract request
+    purpose: Functional correctness and nominal lifecycle completion
+  Q2:
+    name: High-load mobile dApp
+    purpose: Throughput, latency, and scalability stress
+  Q3:
+    name: Cross-contract/cross-shard request
+    purpose: Cross-shard finality and receipt overhead
+  Q4:
+    name: Poor mobile connectivity
+    purpose: Mobile and edge robustness
+  Q5:
+    name: Stake-skewed validator set
+    purpose: Owner-aware anti-oligopoly behaviour
+  Q6:
+    name: Risky/offline validator case
+    purpose: Quarantine, recovery, and security-decentralisation trade-off
+  Q7:
+    name: Hot-shard workload
+    purpose: Load imbalance and adaptive reconfiguration

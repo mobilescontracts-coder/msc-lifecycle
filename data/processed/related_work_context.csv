@@ -1,0 +1,11 @@
+group,work,metric,value,unit,source_url,comparison_status,note
+throughput_context,Qtum base layer,reported throughput,1100.0,TPS,https://medium.com/@Qtum/qtum-strikes-the-perfect-balance-the-blockchain-trilemma-4f4e4bb2af54,contextual only,"Different system, production blockchain context; not apples-to-apples with in-memory prototype API."
+throughput_context,Chainspace,reported throughput,350.0,TPS,https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_09-2_Al-Bassam_paper.pdf,contextual only,Different hardware/testbed and smart-contract sharding implementation.
+throughput_context,OmniLedger 16 shards,reported throughput,5850.0,TPS,https://scispace.com/pdf/omniledger-a-secure-scale-out-decentralized-ledger-via-4niwm89l9x.pdf,contextual only,"Different protocol, shard count, workload, implementation."
+throughput_context,RapidChain,reported throughput,7300.0,tx/s,https://eprint.iacr.org/2018/460,contextual only,Large-scale full-sharding protocol; different assumptions.
+throughput_context,SPoS-MSC deployed API sequential,measured throughput,28193.7392,receipts/s,local deployed prototype,real-time prototype measurement,Measured wall-clock throughput of deployed FastAPI research prototype; no real P2P network or cryptographic consensus.
+throughput_context,SPoS-MSC deployed API batch,measured throughput,40290.7577,receipts/s,local deployed prototype,real-time prototype measurement,"One run-all API request; compute/summary only, export disabled."
+cross_shard_ratio,Hash-based allocation baseline,cross-shard ratio,98.0,%,https://arxiv.org/abs/2212.11584,contextual same metric family,TxAllo paper reports hash-based allocation baseline.
+cross_shard_ratio,TxAllo,cross-shard ratio,12.0,%,https://arxiv.org/abs/2212.11584,contextual same metric family,TxAllo reports about 12% for 60 shards.
+cross_shard_ratio,SPoS-MSC deployed prototype overall,cross-shard ratio,21.8272,%,local deployed prototype,real-time prototype workload metric,Mean across Q1-Q7 with stress scenarios included.
+cross_shard_ratio,SPoS-MSC Q3 cross-shard stress,cross-shard ratio,47.6378,%,local deployed prototype,stress scenario,Deliberately high cross-contract/cross-shard workload.

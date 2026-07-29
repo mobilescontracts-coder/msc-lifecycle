@@ -1,0 +1,16 @@
+{
+  "executions": 700,
+  "transactions": 215274,
+  "routed_transactions": 215274,
+  "finality_certificates": 208820,
+  "receipts": 201877,
+  "reward_events": 605631,
+  "weighted_finality_success_percent": 97.00196029246449,
+  "weighted_receipt_success_percent": 93.77676821167442,
+  "sum_api_elapsed_seconds": 7.1279176500000005,
+  "receipts_per_sum_api_seconds": 28322.016318468548,
+  "provenance": "controlled single-host prototype API benchmark; not public-network throughput",
+  "measured_sequential_wall_clock_seconds": 7.160349,
+  "measured_sequential_receipts_per_second": 28193.7392,
+  "measured_sequential_transactions_per_second": 30064.7375
+}
