@@ -1,0 +1,35 @@
+name: Bug report
+description: Report an error in code, documentation, data handling, or manuscript build.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem
+      description: Describe the observed and expected behaviour.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include the exact command and file paths.
+      placeholder: |
+        1. Checkout commit ...
+        2. Run ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, CPN Tools/Python/TeX versions, model/data checksums.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: First error message or log excerpt
+      render: shell

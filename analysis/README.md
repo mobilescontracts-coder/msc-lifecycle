@@ -1,23 +1,13 @@
-# Analysis scripts
+# Analysis pipeline
 
-The scripts in this directory rebuild scenario summaries and figures from the
-committed raw datasets.
+`analyze_spos_msc_v4.py` validates the four native CPN matrices, calculates derived run-level metrics, produces Q1–Q7 descriptive statistics, performs the three-level local sensitivity analysis, and regenerates the manuscript figures.
+
+Run from the repository root:
 
 ```bash
-python analysis/summarise_cpn_proxy.py
-python analysis/summarise_prototype.py
-python analysis/generate_figures.py
+scripts/run_analysis.sh
 ```
 
-Outputs are written to `outputs/reproduced/`.
+Reference CSV outputs appear in `analysis/reference_outputs/`; newly generated outputs appear in `analysis/reproduced/` and are ignored by Git.
 
-## Evidence labels
-
-- `summarise_cpn_proxy.py` processes workbooks that explicitly identify
-  themselves as a Python proxy/emulation of the integrated CPN semantics.
-  They are **not native CPN Tools monitor exports**.
-- `summarise_prototype.py` processes run-level measurements produced by the
-  tested Python prototype and its local API benchmark.
-- Native CPN monitor exports, when available, must be stored separately under
-  `data/raw/cpn_native/` and analysed with a dedicated, provenance-preserving
-  script.
+`compare_spos_msc_predecessor_audit.py` supports comparison with an archived v3 raw matrix when that matrix becomes available.

@@ -1,47 +1,60 @@
-# Reproducibility Guide
+# Reproducibility protocol
 
-## 1. Verify the repository
+## A. Verify the archived artefacts
 
 ```bash
-python scripts/validate_repository.py
+sha256sum --check CHECKSUMS.sha256
 ```
 
-The validator checks required files, row counts for CSV outputs, CPN Tools generator metadata for included component models, and headline result consistency.
-
-## 2. Run the prototype
+## B. Reproduce analysis from the supplied native CSV matrices
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-pip install -r requirements-dev.txt
+python -m pip install -r requirements-lock.txt
+python analysis/analyze_spos_msc_v4.py \
+  --smoke-csv data/raw/cpn/SPoS_MSC_v4_smoke_2.csv \
+  --pilot-csv data/raw/cpn/SPoS_MSC_v4_sensitivity_pilot_72.csv \
+  --default-csv data/raw/cpn/SPoS_MSC_v4_default_configuration_audit_700.csv \
+  --ofat-csv data/raw/cpn/SPoS_MSC_v4_sensitivity_OFAT_2400.csv \
+  --output-dir analysis/reproduced
 pytest -q
-python scripts/run_scenarios.py --runs 100 --seed 626 --output outputs
 ```
 
-## 3. Run the API benchmark
+Expected validation:
+
+- 2 smoke rows;
+- 72 pilot rows;
+- 700 default-scenario rows;
+- 2,400 OFAT rows;
+- `stop_code=COMPLETE` for every row;
+- no duplicate configuration/run keys;
+- no ordering or terminal-accounting violations.
+
+## C. Re-run CPN Tools experiments
+
+1. Copy the v4 CPN and all SML scripts to one short Windows path.
+2. Open the CPN in CPN Tools 4.0.1 and wait for complete syntax checking.
+3. Execute the scripts in numerical order.
+4. Preserve generated CSVs, replication reports, and simulation-output directories.
+5. Compare new CSV hashes and statistical outputs with the archived release.
+
+## D. Build the manuscript
 
 ```bash
-uvicorn spos_msc.main:app --host 127.0.0.1 --port 8000
+cd manuscript
+SOURCE_DATE_EPOCH=1787011200 latexmk -pdf Manuscript_SMPT.tex
 ```
 
-Use a separate terminal or benchmark script to issue scenario requests. Record system load, warm-up policy, request order, start/end UTC timestamps, and raw response logs.
-
-## 4. Run the CPN model
-
-See `docs/CPN_EXECUTION.md`. The exact integrated model and native monitor exports are mandatory for a release that claims native CPN Tools execution.
-
-## 5. Recompute summaries
+or:
 
 ```bash
-python analysis/summarise_cpn_proxy.py
-python analysis/summarise_prototype.py
-python analysis/generate_figures.py
+pdflatex Manuscript_SMPT.tex
+bibtex Manuscript_SMPT
+pdflatex Manuscript_SMPT.tex
+pdflatex Manuscript_SMPT.tex
 ```
 
-## 6. Record the submission commit
+## E. Full-provenance release additions
 
-```bash
-git rev-parse HEAD > SUBMISSION_COMMIT.txt
-```
-
-Do this only after all paper-linked files are final and committed.
+Before creating an archival DOI, add the native CPN Tools replication folders and the runtime-emulator source/raw outputs described in `docs/RELEASE_CHECKLIST.md`.

@@ -1,0 +1,8 @@
+scenario_id,scenario,name,transactions_per_run,validators,shards,committee_quorum,load_threshold,maximum_logical_time,stress_focus
+1,Q1,Normal,24,10,4,3/2,75,180,Nominal end-to-end lifecycle
+2,Q2,High load,40,10,4,3/2,75,180,Increased offered-load pressure and bounded pre-finality failure injection
+3,Q3,Cross-shard,28,10,4,3/2,75,180,Cross-contract and cross-shard dependencies
+4,Q4,Poor connectivity,24,10,4,3/2,75,240,Admission degradation and receipt-delivery timeout
+5,Q5,Stake skew,24,10,4,3/2,75,180,Shared ownership with concentrated high stake
+6,Q6,Risky/offline,24,10,4,4/3,75,180,"Risk exclusion, quarantine, and committee recovery"
+7,Q7,Hot shard,32,10,4,3/2,55,180,Hotspot pressure and adaptive reconfiguration

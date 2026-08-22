@@ -1,0 +1,21 @@
+\begin{table*}[pos=t]
+\centering
+\caption{Native v4 CPN lifecycle performance over 100 replications per scenario. Values are means $\pm$ 95\% confidence-interval half-widths.}
+\label{tab:cpn_performance_native}
+\scriptsize
+\setlength{\tabcolsep}{3.2pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{tabular}{llccccc}
+\toprule
+\textbf{Sc.} & \textbf{Name} & \textbf{Finality (\%)} & \textbf{Receipt (\%)} & \textbf{Logical throughput} & \textbf{Finality latency} & \textbf{Receipt latency}\\
+\midrule
+Q1 & Normal & 100.00 $\pm$ 0.00 & 100.00 $\pm$ 0.00 & 0.4444 $\pm$ 0.0105 & 19.32 $\pm$ 0.16 & 33.52 $\pm$ 0.23\\
+Q2 & High load & 95.65 $\pm$ 0.22 & 95.65 $\pm$ 0.22 & 0.6262 $\pm$ 0.0118 & 22.69 $\pm$ 0.14 & 37.21 $\pm$ 0.20\\
+Q3 & Cross-shard & 100.00 $\pm$ 0.00 & 100.00 $\pm$ 0.00 & 0.4883 $\pm$ 0.0108 & 26.51 $\pm$ 0.05 & 43.95 $\pm$ 0.08\\
+Q4 & Poor connectivity & 72.54 $\pm$ 0.56 & 48.38 $\pm$ 0.59 & 0.1908 $\pm$ 0.0046 & 26.30 $\pm$ 0.15 & 46.08 $\pm$ 0.30\\
+Q5 & Stake skew & 100.00 $\pm$ 0.00 & 100.00 $\pm$ 0.00 & 0.4510 $\pm$ 0.0102 & 19.37 $\pm$ 0.14 & 33.59 $\pm$ 0.20\\
+Q6 & Risky/offline & 100.00 $\pm$ 0.00 & 100.00 $\pm$ 0.00 & 0.4470 $\pm$ 0.0101 & 19.40 $\pm$ 0.16 & 33.63 $\pm$ 0.23\\
+Q7 & Hot shard & 100.00 $\pm$ 0.00 & 100.00 $\pm$ 0.00 & 0.6397 $\pm$ 0.0004 & 24.27 $\pm$ 0.05 & 40.74 $\pm$ 0.07\\
+\bottomrule
+\end{tabular}
+\end{table*}

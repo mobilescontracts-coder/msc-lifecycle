@@ -1,0 +1,11 @@
+name: spos-msc-v4
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy=2.3.5
+  - pandas=2.2.3
+  - scipy=1.17.0
+  - matplotlib=3.10.8
+  - pytest=9.0.2
+  - pip

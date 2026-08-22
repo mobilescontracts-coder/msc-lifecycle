@@ -1,3 +1,3 @@
-# Code of Conduct
+# Code of conduct
 
-Participants are expected to communicate respectfully, report technical disagreements with evidence, and avoid misrepresenting model or benchmark provenance. Harassment, personal attacks, and falsification of experimental evidence are not acceptable.
+Participants must engage respectfully, focus criticism on technical content, and avoid harassment, discrimination, or disclosure of private information. Maintainers may edit or remove abusive content and restrict participation when necessary to protect a constructive research environment.

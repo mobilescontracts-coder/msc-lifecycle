@@ -1,9 +1,0 @@
-# Human-readable scenario configuration summary.
-# Scenario values are implemented in spos_msc/scenarios.py.
-Q1: Normal Qtum mobile contract request
-Q2: High-load Qtum mobile dApp
-Q3: Cross-contract/cross-shard Qtum request
-Q4: Poor mobile connectivity
-Q5: Stake-skewed validator set
-Q6: Risky/offline validator case
-Q7: Hot-shard Qtum workload

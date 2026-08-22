@@ -1,0 +1,35 @@
+name: Native-data analysis
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate-and-analyse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements-lock.txt
+      - name: Install dependencies
+        run: python -m pip install -r requirements-lock.txt
+      - name: Run tests
+        run: pytest -q
+      - name: Reproduce analysis
+        run: |
+          python analysis/analyze_spos_msc_v4.py \
+            --smoke-csv data/raw/cpn/SPoS_MSC_v4_smoke_2.csv \
+            --pilot-csv data/raw/cpn/SPoS_MSC_v4_sensitivity_pilot_72.csv \
+            --default-csv data/raw/cpn/SPoS_MSC_v4_default_configuration_audit_700.csv \
+            --ofat-csv data/raw/cpn/SPoS_MSC_v4_sensitivity_OFAT_2400.csv \
+            --output-dir analysis/ci-output
+      - name: Compare with reference outputs
+        run: |
+          python analysis/verify_reference_outputs.py \
+            --generated analysis/ci-output \
+            --reference analysis/reference_outputs

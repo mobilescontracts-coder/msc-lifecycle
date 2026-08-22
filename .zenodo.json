@@ -1,21 +1,16 @@
 {
-  "title": "SPoS-MSC Reproducibility Package",
-  "description": "Formal CPN models, prototype implementation, scenario data, analysis scripts, and figures for executable modelling of a scalable mobile smart-contract lifecycle with incentive-aware Proof-of-Stake governance.",
+  "title": "SPoS-MSC v4 reproducibility artefacts",
   "upload_type": "software",
-  "license": "MIT",
+  "description": "Sensitivity-enabled hierarchical CPN model, native Q1–Q7 and local OFAT data, analysis code, manuscript, figures, tables, and provenance metadata for SPoS-MSC.",
   "creators": [
-    {"name": "Deval, Vipin"},
-    {"name": "Dwivedi, Vimal"},
+    {"name": "Deval, Vipin", "affiliation": "Tallinn University of Technology"},
+    {"name": "Dwivedi, Vimal", "affiliation": "Ulster University"},
     {"name": "Norta, Alex"},
-    {"name": "Draheim, Dirk"}
+    {"name": "Draheim, Dirk", "affiliation": "Tallinn University of Technology"}
   ],
-  "keywords": [
-    "blockchain simulation",
-    "Coloured Petri Nets",
-    "mobile smart contracts",
-    "Proof-of-Stake governance",
-    "sharded blockchains",
-    "validator decentralisation"
+  "keywords": ["blockchain simulation", "Coloured Petri Nets", "mobile smart contracts", "Proof-of-Stake", "sharding", "sensitivity analysis"],
+  "related_identifiers": [
+    {"identifier": "https://github.com/mobilescontracts-coder/spos-msc", "relation": "isSupplementTo", "scheme": "url"}
   ],
-  "related_identifiers": []
+  "version": "4.0.0"
 }

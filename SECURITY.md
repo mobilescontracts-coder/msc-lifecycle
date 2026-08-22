@@ -1,5 +1,5 @@
-# Security Policy
+# Security policy
 
-This repository is a research prototype and formal-modelling artefact, not production blockchain software. Do not deploy it to secure financial assets or public consensus networks without independent review.
+SPoS-MSC is a modelling and simulation research artefact, not production blockchain software. Do not deploy it as a consensus, wallet, cryptographic, or financial system.
 
-Report security-sensitive findings privately to the corresponding project maintainer before public disclosure. Include reproduction steps, affected version, and impact.
+Report security-sensitive issues privately to the corresponding author listed in `CITATION.cff`. Include only enough information to reproduce the issue and do not disclose credentials, private datasets, or personal data.

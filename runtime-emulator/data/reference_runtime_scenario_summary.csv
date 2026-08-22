@@ -1,0 +1,8 @@
+scenario_id,scenario_name,ms_per_run,receipts_per_second,receipt_success_pct,receipt_latency,cross_shard_pct,reward_gini
+Q1,Normal,8.65,26030.48,96.33,23.21,12.19,29.85
+Q2,High load,13.19,33141.69,96.37,23.60,19.20,28.92
+Q3,Cross-shard,9.73,27945.65,95.16,25.30,47.64,28.94
+Q4,Poor connectivity,8.43,24365.21,80.98,26.89,15.20,29.67
+Q5,Stake skew,9.83,31207.60,96.51,23.44,16.26,28.87
+Q6,Risky/offline,9.38,29894.39,96.30,23.63,19.31,29.05
+Q7,Hot shard,12.08,29906.57,92.36,23.83,23.00,30.10

@@ -1,0 +1,25 @@
+\begin{table*}[pos=t]
+\centering
+\caption{Local OFAT sensitivity results for the pre-specified primary response of each factor. Each level includes 100 independent native CPN replications.}
+\label{tab:sensitivity_primary}
+\scriptsize
+\setlength{\tabcolsep}{2.6pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{tabularx}{\textwidth}{p{2.55cm}p{2.55cm}ccccl}
+\toprule
+\textbf{Factor} & \textbf{Primary response} & \textbf{Low} & \textbf{Default} & \textbf{High} & $\boldsymbol{\epsilon^2}$ & \textbf{High--default difference (95\% CI)}\\
+\midrule
+Transactions/run & Logical throughput & 0.334 & 0.445 & 0.681 & 0.898 & 0.235 [0.218, 0.252]\\
+Cross-shard demand & Receipt latency & 37.36 & 43.98 & 47.29 & 0.889 & 3.309 [3.158, 3.459]\\
+Request disconnection & Finality success (\%) & 81.75 & 72.54 & 63.29 & 0.836 & -9.250 [-10.36, -8.142]\\
+Receipt delivery drop & Receipt success (\%) & 63.88 & 48.38 & 39.83 & 0.841 & -8.542 [-9.575, -7.508]\\
+Owner-stake cap & Largest-owner reward share (\%) & 33.05 & 45.56 & 38.96 & 0.192 & -6.596 [-9.601, -3.592]\\
+Mobile-fitness threshold & Eligible validators & 6.000 & 6.000 & 3.000 & 1.000 & -3.000 [-3.000, -3.000]\\
+Committee/quorum & Committee recoveries/run & 0.480 & 1.150 & 2.250 & 0.630 & 1.100 [0.925, 1.275]\\
+Load threshold & Reconfiguration events/run & 10.17 & 7.860 & 4.150 & 0.863 & -3.710 [-3.917, -3.503]\\
+\bottomrule
+\end{tabularx}
+\begin{minipage}{0.98\textwidth}\footnotesize
+All Kruskal--Wallis omnibus tests have $p<0.001$. Non-default versus default contrasts use Mann--Whitney $U$ tests with Holm adjustment and Cliff's delta; the displayed confidence interval is a Welch interval for the difference in means. The analysis is local to the tested levels and is not a global variance decomposition.
+\end{minipage}
+\end{table*}

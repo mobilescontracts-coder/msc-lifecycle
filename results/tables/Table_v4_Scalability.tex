@@ -1,0 +1,20 @@
+\begin{table*}[pos=t]
+\centering
+\caption{Native v4 shard pressure, reconfiguration, and validator-resilience evidence. Values are means $\pm$ 95\% confidence-interval half-widths.}
+\label{tab:cpn_scalability_security_native}
+\scriptsize
+\setlength{\tabcolsep}{3.0pt}
+\begin{tabular}{llccccccc}
+\toprule
+\textbf{Sc.} & \textbf{Name} & \textbf{Cross-shard (\%)} & \textbf{Reconfig./run} & \textbf{Load SD} & \textbf{Eligible val.} & \textbf{Recovery/run} & \textbf{Quarantine/run} & \textbf{Slashing/run}\\
+\midrule
+Q1 & Normal & 11.62 $\pm$ 1.22 & 0.05 $\pm$ 0.04 & 2.68 $\pm$ 0.24 & 10 & 0.00 $\pm$ 0.00 & 0 & 0\\
+Q2 & High load & 15.45 $\pm$ 1.05 & 5.48 $\pm$ 0.17 & 8.11 $\pm$ 0.54 & 10 & 0.00 $\pm$ 0.00 & 0 & 0\\
+Q3 & Cross-shard & 63.29 $\pm$ 0.44 & 0.58 $\pm$ 0.11 & 5.90 $\pm$ 0.60 & 10 & 0.00 $\pm$ 0.00 & 0 & 0\\
+Q4 & Poor connectivity & 7.92 $\pm$ 0.85 & 0.00 $\pm$ 0.00 & 2.95 $\pm$ 0.11 & 10 & 0.00 $\pm$ 0.00 & 0 & 0\\
+Q5 & Stake skew & 11.92 $\pm$ 1.06 & 0.02 $\pm$ 0.03 & 2.46 $\pm$ 0.22 & 10 & 0.00 $\pm$ 0.00 & 0 & 0\\
+Q6 & Risky/offline & 12.25 $\pm$ 1.22 & 0.04 $\pm$ 0.04 & 2.71 $\pm$ 0.23 & 6 & 1.15 $\pm$ 0.11 & 2 & 2\\
+Q7 & Hot shard & 48.38 $\pm$ 0.42 & 7.76 $\pm$ 0.19 & 9.51 $\pm$ 0.34 & 10 & 0.00 $\pm$ 0.00 & 0 & 0\\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,6 @@
+metric,correlation_type,value
+receipt_success,Pearson,0.957
+receipt_latency,Spearman,0.964
+cross_shard_ratio,Spearman,0.929
+logical_throughput,Spearman,0.750
+reward_gini,Spearman,0.429

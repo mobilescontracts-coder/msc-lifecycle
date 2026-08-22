@@ -1,0 +1,43 @@
+{
+  "repository_version": "4.0.0",
+  "release_date": "2026-08-18",
+  "target_repository": "https://github.com/mobilescontracts-coder/spos-msc",
+  "native_cpn_environment": {
+    "tool": "CPN Tools",
+    "version": "4.0.1",
+    "base_seed": 626
+  },
+  "local_repository_verification": {
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+    "python_dependencies": {
+      "python": "3.13.5",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8",
+      "pytest": "9.0.2"
+    },
+    "latexmk": "4.86",
+    "texlive": "2025/dev Debian",
+    "manuscript_pages": 32,
+    "pytest_tests": 9,
+    "source_date_epoch": 1787011200,
+    "deterministic_pdf_sha256": "fe07fbfd105423b4211a3ab1865edd38ef428b056afd86b1c7ca2c4f556db9aa",
+    "undefined_citations": 0,
+    "undefined_references": 0,
+    "fatal_latex_errors": 0,
+    "overfull_hboxes": 1,
+    "underfull_hboxes": 67
+  },
+  "experiment_rows": {
+    "smoke": 2,
+    "pilot": 72,
+    "scenario": 700,
+    "ofat": 2400
+  },
+  "known_missing_artifacts": [
+    "native CPN Tools replication-report/output folders",
+    "archived v3 raw 700-row CSV",
+    "runtime-emulator source and raw run-level outputs"
+  ]
+}

@@ -1,0 +1,24 @@
+\begin{table*}[pos=t]
+\centering
+\caption{Aggregate native CPN evidence across 700 v4 SPoS-MSC replications.}
+\label{tab:cpn_aggregate_native}
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabularx}{\textwidth}{Xr@{\hspace{1.0cm}}Xr}
+\toprule
+\textbf{Metric} & \textbf{Value} & \textbf{Metric} & \textbf{Value}\\
+\midrule
+Scenario replications & 700 & Submitted transactions & 19,600\\
+Prepared/routed transactions & 18,941 & Shard blocks & 18,767\\
+Finality certificates & 18,767 & Root commitments & 18,767\\
+Mobile receipts & 18,187 & Terminal failures & 1,413\\
+Weighted finality success & 95.75\% & Weighted receipt success & 92.79\%\\
+Aggregate logical throughput & 0.461 & Cross-shard ratio & 25.44\%\\
+Weighted finality latency & 22.59 & Weighted receipt latency & 38.00\\
+Reward events & 94,899 & Committee recoveries & 115\\
+Quarantine/slashing events & 200/200 & Reconfiguration events & 1,393\\
+Integrated evidence records & 316,366 & Invariant-valid completed runs & 700\\
+\bottomrule
+\end{tabularx}
+\end{table*}

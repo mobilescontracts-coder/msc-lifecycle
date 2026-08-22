@@ -1,0 +1,23 @@
+SPoS-MSC v4 native CSV validation
+=================================
+smoke: rows=2, complete=2, lifecycle_violations=0, accounting_violations=0, duplicate_keys=0, base_seed=626
+pilot: rows=72, complete=72, lifecycle_violations=0, accounting_violations=0, duplicate_keys=0, base_seed=626
+default audit: rows=700, complete=700, lifecycle_violations=0, accounting_violations=0, duplicate_keys=0, base_seed=626
+OFAT: rows=2400, complete=2400, lifecycle_violations=0, accounting_violations=0, duplicate_keys=0, base_seed=626
+
+Default-configuration aggregate audit against archived v3 report
+----------------------------------------------------------------
+Core lifecycle totals match: submitted, prepared, routed, shard-block,
+finality-certificate, root-commitment, receipt, and terminal-failure counts.
+Four stochastic diagnostic totals differ:
+- cross_shard_tx: v3=4995, v4=4987, difference=-8
+- reward_events: v3=94912, v4=94899, difference=-13
+- reconfiguration_events: v3=1401, v4=1393, difference=-8
+- evidence_count: v3=316374, v4=316366, difference=-8
+
+Statistical-design audit
+------------------------
+- Identical Q4 default configurations in two OFAT batches: 0/100 row-wise exact matches.
+- Identical Q6 default configurations in two OFAT batches: 0/100 row-wise exact matches.
+- Run IDs provide provenance, not matched random streams.
+- The manuscript uses independent repeated-run statistics rather than paired tests.

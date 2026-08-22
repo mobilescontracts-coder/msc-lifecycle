@@ -1,27 +1,40 @@
 cff-version: 1.2.0
-message: "Please cite the archived repository release and the associated article."
-title: "SPoS-MSC Reproducibility Package"
+message: "If you use this repository, cite the repository release and the associated SPoS-MSC manuscript."
+title: "SPoS-MSC: Reproducibility artefacts for executable modelling of a sharded mobile smart-contract lifecycle with incentive-aware Proof-of-Stake governance"
 type: software
-version: 0.1.0
-date-released: 2026-07-29
+version: 4.0.0
+date-released: 2026-08-18
+repository-code: "https://github.com/mobilescontracts-coder/spos-msc"
 authors:
   - family-names: Deval
     given-names: Vipin
+    email: vipin.deval@taltech.ee
   - family-names: Dwivedi
     given-names: Vimal
   - family-names: Norta
     given-names: Alex
   - family-names: Draheim
     given-names: Dirk
-abstract: >-
-  Formal CPN models, prototype implementation, scenario data, analysis scripts,
-  and figures for executable modelling of a scalable mobile smart-contract
-  lifecycle with incentive-aware Proof-of-Stake governance.
 keywords:
   - blockchain simulation
   - Coloured Petri Nets
   - mobile smart contracts
-  - Proof-of-Stake governance
-  - sharded blockchains
+  - Proof-of-Stake
+  - sharding
+  - sensitivity analysis
   - validator decentralisation
-license: MIT
+abstract: >-
+  Executable CPN models, native scenario and local OFAT data, analysis code,
+  manuscript sources, figures, tables, and provenance metadata for the SPoS-MSC study.
+preferred-citation:
+  type: article
+  title: "Executable Modelling of a Sharded Mobile Smart-Contract Lifecycle with Incentive-Aware Proof-of-Stake Governance"
+  authors:
+    - family-names: Deval
+      given-names: Vipin
+    - family-names: Dwivedi
+      given-names: Vimal
+    - family-names: Norta
+      given-names: Alex
+    - family-names: Draheim
+      given-names: Dirk

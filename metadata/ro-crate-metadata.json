@@ -1,0 +1,30 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {"@id": "./"},
+      "conformsTo": {"@id": "https://w3id.org/ro/crate/1.1"}
+    },
+    {
+      "@id": "./",
+      "@type": ["Dataset", "SoftwareSourceCode"],
+      "name": "SPoS-MSC v4 reproducibility repository",
+      "description": "Executable CPN models, native data, analysis, manuscript, and provenance for SPoS-MSC.",
+      "version": "4.0.0",
+      "datePublished": "2026-08-18",
+      "url": "https://github.com/mobilescontracts-coder/spos-msc",
+      "creator": [
+        {"@id": "#vipin-deval"},
+        {"@id": "#vimal-dwivedi"},
+        {"@id": "#alex-norta"},
+        {"@id": "#dirk-draheim"}
+      ]
+    },
+    {"@id": "#vipin-deval", "@type": "Person", "name": "Vipin Deval"},
+    {"@id": "#vimal-dwivedi", "@type": "Person", "name": "Vimal Dwivedi"},
+    {"@id": "#alex-norta", "@type": "Person", "name": "Alex Norta"},
+    {"@id": "#dirk-draheim", "@type": "Person", "name": "Dirk Draheim"}
+  ]
+}

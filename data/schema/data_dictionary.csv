@@ -1,0 +1,36 @@
+column,type,description,unit_or_role
+experiment_id,string,"Experiment family identifier, such as SMOKE, PILOT, DEFAULT_EQ, or OFAT.",identifier
+factor_id,string,Sensitivity factor identifier or scenario-design identifier.,identifier
+level_id,string,"Sensitivity level: LOW, DEFAULT, HIGH, or a default audit label.",identifier
+configuration,string,Pipe-delimited resolved executable parameter vector used for the run.,provenance
+scenario_id,integer,Q1–Q7 scenario number encoded as 1–7.,identifier
+run_id,integer,Run identifier within the factor/level or scenario cell.,identifier
+base_seed,integer,Model-level base seed; 626 in the supplied matrices.,provenance
+model_time,integer,Logical CPN model time when the run finalises.,logical time
+stop_code,string,Explicit terminal status; COMPLETE for all validated rows.,status
+submitted_tx,integer,Submitted mobile transactions in the run.,count
+prepared_tx,integer,Transactions that pass preparation/admission.,count
+routed_tx,integer,Prepared transactions routed to a shard.,count
+cross_shard_tx,integer,Submitted transactions classified as cross-shard.,count
+shard_blocks,integer,Shard blocks produced.,count
+eligible_validators,integer,Validators satisfying the active eligibility policy.,count
+active_committees,integer,Active shard committees recorded in the run.,count
+committee_recoveries,integer,Abstract committee-completion/recovery events.,count
+finality_certificates,integer,Transactions receiving a finality certificate.,count
+root_commitments,integer,Transactions receiving a root-chain commitment.,count
+receipts,integer,Mobile receipts delivered successfully.,count
+terminal_failures,integer,Explicit terminal failures; receipts + failures = submitted.,count
+reward_events,integer,"Recorded proposer, voter, and receipt reward events.",count
+quarantine_events,integer,Validator quarantine events.,count
+slashing_events,integer,Validator slashing/penalty events.,count
+reconfiguration_events,integer,Adaptive shard reconfiguration events.,count
+evidence_count,integer,Integrated lifecycle/governance evidence records.,count
+finality_latency_sum,integer,Sum of finality latencies for observed finality events.,logical time
+finality_latency_n,integer,Number of observations in finality_latency_sum.,count
+receipt_latency_sum,integer,Sum of receipt latencies for observed receipt events.,logical time
+receipt_latency_n,integer,Number of observations in receipt_latency_sum.,count
+reward_gini_bp,integer,Reward Gini scaled by 100; divide by 100 for the reported 0–100 value.,scaled metric
+reward_hhi_bp,integer,Reward HHI scaled by 100; divide by 100 for the reported 0–100 value.,scaled metric
+nakamoto_coefficient,integer,Reward-based 51% concentration coefficient recorded by the model.,count
+owner_concentration_bp,integer,Largest-owner reward share scaled by 100; divide by 100 for percent.,scaled metric
+shard_load_std_bp,integer,Shard-load standard deviation scaled by 100; divide by 100.,scaled metric

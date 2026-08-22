@@ -1,0 +1,9 @@
+factor_id,factor,primary_metric,primary_metric_label,low_value,default_value,high_value,low_mean,default_mean,high_mean,kruskal_H,kruskal_p,epsilon_squared
+WORKLOAD,Transactions/run,logical_throughput,Logical throughput,16,24,40,0.33433997690641526,0.445436751854336,0.6806162457579539,268.8114644942985,4.249444376716162e-59,0.8983550993074023
+CROSS_SHARD_PCT,Cross-shard demand,mean_receipt_latency,Receipt latency,20%,60%,80%,37.36392857142857,43.984642857142845,47.293571428571425,266.1392540268027,1.6165728444773475e-58,0.8893577576660023
+REQUEST_OFFLINE_PCT,Request disconnection,finality_success_pct,Finality success (%),10%,20%,30%,81.75,72.54166666666667,63.29166666666667,250.23172812906762,4.601194989751375e-55,0.8357970644076351
+RECEIPT_DROP_PCT,Receipt delivery drop,receipt_success_pct,Receipt success (%),10%,29%,40%,63.87500000000001,48.375,39.833333333333336,251.70403200556987,2.20375805947587e-55,0.8407543165170702
+OWNER_CAP,Owner-stake cap,owner_concentration_pct,Largest-owner reward share (%),1500,3000,6000,33.0523,45.555899999999994,38.9596,59.03797664818497,1.5137921872032617e-13,0.19204705942149822
+MOBILE_THRESHOLD,Mobile-fitness threshold,eligible_validators,Eligible validators,25,35,65,6.0,6.0,3.0,299.0000000000002,1.1829733350269617e-65,1.0
+COMMITTEE_QUORUM,Committee/quorum,committee_recoveries,Committee recoveries/run,3/2,4/3,5/4,0.48,1.15,2.25,189.08237668247634,8.735415978690851e-42,0.6299069921968901
+LOAD_THRESHOLD,Load threshold,reconfiguration_events,Reconfiguration events/run,45,55,75,10.17,7.86,4.15,258.2938042921136,8.169830439389199e-57,0.8629421019936484

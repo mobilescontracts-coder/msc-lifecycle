@@ -1,36 +1,29 @@
-.PHONY: install test lint reproduce validate validate-strict checksums run api docker release
+PYTHON ?= python3
 
-install:
-	python -m pip install -r requirements-dev.txt
+.PHONY: all verify analysis reference-check test manuscript clean
+
+all: verify test analysis reference-check manuscript
+
+verify:
+	sha256sum --check CHECKSUMS.sha256
+
+analysis:
+	$(PYTHON) analysis/analyze_spos_msc_v4.py \
+	  --smoke-csv data/raw/cpn/SPoS_MSC_v4_smoke_2.csv \
+	  --pilot-csv data/raw/cpn/SPoS_MSC_v4_sensitivity_pilot_72.csv \
+	  --default-csv data/raw/cpn/SPoS_MSC_v4_default_configuration_audit_700.csv \
+	  --ofat-csv data/raw/cpn/SPoS_MSC_v4_sensitivity_OFAT_2400.csv \
+	  --output-dir analysis/reproduced
+
+reference-check: analysis
+	$(PYTHON) analysis/verify_reference_outputs.py --generated analysis/reproduced --reference analysis/reference_outputs
 
 test:
-	pytest -q
+	$(PYTHON) -m pytest -q
 
-lint:
-	ruff check spos_msc scripts analysis tests
+manuscript:
+	cd manuscript && SOURCE_DATE_EPOCH=1787011200 latexmk -pdf Manuscript_SMPT.tex
 
-reproduce:
-	python analysis/summarise_cpn_proxy.py
-	python analysis/summarise_prototype.py
-	python analysis/generate_figures.py
-
-validate:
-	python scripts/validate_repository.py
-
-validate-strict:
-	python scripts/validate_repository.py --strict
-
-checksums:
-	python scripts/generate_checksums.py
-
-run:
-	python scripts/run_scenarios.py --runs 100 --seed 626 --output outputs
-
-api:
-	uvicorn spos_msc.main:app --host 0.0.0.0 --port 8000
-
-docker:
-	docker compose up --build
-
-release:
-	bash scripts/make_release.sh
+clean:
+	rm -rf analysis/reproduced analysis/ci-output .pytest_cache
+	cd manuscript && latexmk -C Manuscript_SMPT.tex || true

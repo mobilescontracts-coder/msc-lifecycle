@@ -1,0 +1,37 @@
+name: Reproducibility report
+description: Report an independent attempt to reproduce the native analysis or manuscript.
+title: "[Reproduction]: "
+labels: [reproducibility]
+body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - CPN Tools execution
+        - CSV integrity validation
+        - Statistical analysis
+        - Figures/tables
+        - Manuscript build
+        - Runtime-emulator summary
+    validations:
+      required: true
+  - type: input
+    id: commit
+    attributes:
+      label: Commit or release
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Result
+      description: State whether reproduction passes and list any differences.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and checksums
+    validations:
+      required: true

@@ -1,8 +1,15 @@
-*.cpn text working-tree-encoding=ISO-8859-1
+* text=auto eol=lf
+*.cpn text eol=lf
+*.sml text eol=lf
+*.py text eol=lf
+*.tex text eol=lf
+*.bib text eol=lf
 *.csv text eol=lf
 *.md text eol=lf
-*.py text eol=lf
-*.sh text eol=lf
-*.xlsx binary
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.pdf binary
 *.png binary
+*.eps binary
 *.drawio text eol=lf

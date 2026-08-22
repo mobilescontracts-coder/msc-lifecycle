@@ -1,0 +1,18 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "SPoS-MSC",
+  "version": "4.0.0",
+  "datePublished": "2026-08-18",
+  "codeRepository": "https://github.com/mobilescontracts-coder/spos-msc",
+  "description": "Reproducibility artefacts for the sensitivity-enabled SPoS-MSC hierarchical Coloured Petri Net study.",
+  "programmingLanguage": ["Standard ML", "Python", "LaTeX"],
+  "runtimePlatform": ["CPN Tools 4.0.1", "Python 3.11", "TeX Live"],
+  "author": [
+    {"@type": "Person", "givenName": "Vipin", "familyName": "Deval", "email": "vipin.deval@taltech.ee"},
+    {"@type": "Person", "givenName": "Vimal", "familyName": "Dwivedi"},
+    {"@type": "Person", "givenName": "Alex", "familyName": "Norta"},
+    {"@type": "Person", "givenName": "Dirk", "familyName": "Draheim"}
+  ],
+  "keywords": ["blockchain", "Coloured Petri Net", "mobile smart contract", "Proof-of-Stake", "sharding", "sensitivity analysis"]
+}

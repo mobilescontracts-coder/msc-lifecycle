@@ -1,0 +1,9 @@
+factor_id,factor,anchor_scenario,low,default,high,primary_response
+WORKLOAD,Transactions per run,Q1,16,24,40,Logical throughput; workload pressure
+CROSS_SHARD_PCT,Forced cross-shard demand,Q3,20%,60%,80%,Cross-shard activity and receipt latency
+REQUEST_OFFLINE_PCT,Request-disconnection fraction,Q4,10%,20%,30%,Admission success and finality success
+RECEIPT_DROP_PCT,Receipt-delivery drop fraction,Q4,10%,29%,40%,Receipt success and finality–receipt gap
+OWNER_CAP,Owner-stake cap,Q5,1500,3000,6000,Validator/owner reward concentration
+MOBILE_THRESHOLD,Mobile-fitness threshold,Q6,25,35,65,"Eligible validators, finality, and decentralisation"
+COMMITTEE_QUORUM,Committee-size/quorum policy,Q6,3/2,4/3,5/4,Committee recovery and reward participation
+LOAD_THRESHOLD,Reconfiguration load threshold,Q7,45,55,75,Reconfiguration frequency and shard-load dispersion

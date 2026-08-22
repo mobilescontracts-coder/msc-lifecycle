@@ -1,0 +1,622 @@
+{
+  "profile": "data-package",
+  "name": "spos-msc-v4-native-cpn-data",
+  "title": "SPoS-MSC v4 native CPN scenario and local sensitivity data",
+  "description": "Two-run smoke, 72-run pilot, 700-run Q1\u2013Q7 default-configuration audit, and 2,400-run local OFAT matrices.",
+  "version": "4.0.0",
+  "licenses": [],
+  "resources": [
+    {
+      "name": "spos_msc_v4_default_configuration_audit_700",
+      "path": "data/raw/cpn/SPoS_MSC_v4_default_configuration_audit_700.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 214804,
+      "hash": "sha256:b53668cd159f8dbf617c58e14694951f321152a6bddd5b0c7e1c40ef618e9481",
+      "schema": {
+        "fields": [
+          {
+            "name": "experiment_id",
+            "type": "string"
+          },
+          {
+            "name": "factor_id",
+            "type": "string"
+          },
+          {
+            "name": "level_id",
+            "type": "string"
+          },
+          {
+            "name": "configuration",
+            "type": "string"
+          },
+          {
+            "name": "scenario_id",
+            "type": "integer"
+          },
+          {
+            "name": "run_id",
+            "type": "integer"
+          },
+          {
+            "name": "base_seed",
+            "type": "integer"
+          },
+          {
+            "name": "model_time",
+            "type": "integer"
+          },
+          {
+            "name": "stop_code",
+            "type": "string"
+          },
+          {
+            "name": "submitted_tx",
+            "type": "integer"
+          },
+          {
+            "name": "prepared_tx",
+            "type": "integer"
+          },
+          {
+            "name": "routed_tx",
+            "type": "integer"
+          },
+          {
+            "name": "cross_shard_tx",
+            "type": "integer"
+          },
+          {
+            "name": "shard_blocks",
+            "type": "integer"
+          },
+          {
+            "name": "eligible_validators",
+            "type": "integer"
+          },
+          {
+            "name": "active_committees",
+            "type": "integer"
+          },
+          {
+            "name": "committee_recoveries",
+            "type": "integer"
+          },
+          {
+            "name": "finality_certificates",
+            "type": "integer"
+          },
+          {
+            "name": "root_commitments",
+            "type": "integer"
+          },
+          {
+            "name": "receipts",
+            "type": "integer"
+          },
+          {
+            "name": "terminal_failures",
+            "type": "integer"
+          },
+          {
+            "name": "reward_events",
+            "type": "integer"
+          },
+          {
+            "name": "quarantine_events",
+            "type": "integer"
+          },
+          {
+            "name": "slashing_events",
+            "type": "integer"
+          },
+          {
+            "name": "reconfiguration_events",
+            "type": "integer"
+          },
+          {
+            "name": "evidence_count",
+            "type": "integer"
+          },
+          {
+            "name": "finality_latency_sum",
+            "type": "integer"
+          },
+          {
+            "name": "finality_latency_n",
+            "type": "integer"
+          },
+          {
+            "name": "receipt_latency_sum",
+            "type": "integer"
+          },
+          {
+            "name": "receipt_latency_n",
+            "type": "integer"
+          },
+          {
+            "name": "reward_gini_bp",
+            "type": "integer"
+          },
+          {
+            "name": "reward_hhi_bp",
+            "type": "integer"
+          },
+          {
+            "name": "nakamoto_coefficient",
+            "type": "integer"
+          },
+          {
+            "name": "owner_concentration_bp",
+            "type": "integer"
+          },
+          {
+            "name": "shard_load_std_bp",
+            "type": "integer"
+          }
+        ]
+      }
+    },
+    {
+      "name": "spos_msc_v4_sensitivity_ofat_2400",
+      "path": "data/raw/cpn/SPoS_MSC_v4_sensitivity_OFAT_2400.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 743458,
+      "hash": "sha256:7ceae15f43505aaed676bd3aae9b8ba71244a0302ca896df743e35b8859a3bf7",
+      "schema": {
+        "fields": [
+          {
+            "name": "experiment_id",
+            "type": "string"
+          },
+          {
+            "name": "factor_id",
+            "type": "string"
+          },
+          {
+            "name": "level_id",
+            "type": "string"
+          },
+          {
+            "name": "configuration",
+            "type": "string"
+          },
+          {
+            "name": "scenario_id",
+            "type": "integer"
+          },
+          {
+            "name": "run_id",
+            "type": "integer"
+          },
+          {
+            "name": "base_seed",
+            "type": "integer"
+          },
+          {
+            "name": "model_time",
+            "type": "integer"
+          },
+          {
+            "name": "stop_code",
+            "type": "string"
+          },
+          {
+            "name": "submitted_tx",
+            "type": "integer"
+          },
+          {
+            "name": "prepared_tx",
+            "type": "integer"
+          },
+          {
+            "name": "routed_tx",
+            "type": "integer"
+          },
+          {
+            "name": "cross_shard_tx",
+            "type": "integer"
+          },
+          {
+            "name": "shard_blocks",
+            "type": "integer"
+          },
+          {
+            "name": "eligible_validators",
+            "type": "integer"
+          },
+          {
+            "name": "active_committees",
+            "type": "integer"
+          },
+          {
+            "name": "committee_recoveries",
+            "type": "integer"
+          },
+          {
+            "name": "finality_certificates",
+            "type": "integer"
+          },
+          {
+            "name": "root_commitments",
+            "type": "integer"
+          },
+          {
+            "name": "receipts",
+            "type": "integer"
+          },
+          {
+            "name": "terminal_failures",
+            "type": "integer"
+          },
+          {
+            "name": "reward_events",
+            "type": "integer"
+          },
+          {
+            "name": "quarantine_events",
+            "type": "integer"
+          },
+          {
+            "name": "slashing_events",
+            "type": "integer"
+          },
+          {
+            "name": "reconfiguration_events",
+            "type": "integer"
+          },
+          {
+            "name": "evidence_count",
+            "type": "integer"
+          },
+          {
+            "name": "finality_latency_sum",
+            "type": "integer"
+          },
+          {
+            "name": "finality_latency_n",
+            "type": "integer"
+          },
+          {
+            "name": "receipt_latency_sum",
+            "type": "integer"
+          },
+          {
+            "name": "receipt_latency_n",
+            "type": "integer"
+          },
+          {
+            "name": "reward_gini_bp",
+            "type": "integer"
+          },
+          {
+            "name": "reward_hhi_bp",
+            "type": "integer"
+          },
+          {
+            "name": "nakamoto_coefficient",
+            "type": "integer"
+          },
+          {
+            "name": "owner_concentration_bp",
+            "type": "integer"
+          },
+          {
+            "name": "shard_load_std_bp",
+            "type": "integer"
+          }
+        ]
+      }
+    },
+    {
+      "name": "spos_msc_v4_sensitivity_pilot_72",
+      "path": "data/raw/cpn/SPoS_MSC_v4_sensitivity_pilot_72.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 22761,
+      "hash": "sha256:3fd4f528822ec51992aa0567b54fe53e22f19eb1e0ce8b46bdabc80de966fe39",
+      "schema": {
+        "fields": [
+          {
+            "name": "experiment_id",
+            "type": "string"
+          },
+          {
+            "name": "factor_id",
+            "type": "string"
+          },
+          {
+            "name": "level_id",
+            "type": "string"
+          },
+          {
+            "name": "configuration",
+            "type": "string"
+          },
+          {
+            "name": "scenario_id",
+            "type": "integer"
+          },
+          {
+            "name": "run_id",
+            "type": "integer"
+          },
+          {
+            "name": "base_seed",
+            "type": "integer"
+          },
+          {
+            "name": "model_time",
+            "type": "integer"
+          },
+          {
+            "name": "stop_code",
+            "type": "string"
+          },
+          {
+            "name": "submitted_tx",
+            "type": "integer"
+          },
+          {
+            "name": "prepared_tx",
+            "type": "integer"
+          },
+          {
+            "name": "routed_tx",
+            "type": "integer"
+          },
+          {
+            "name": "cross_shard_tx",
+            "type": "integer"
+          },
+          {
+            "name": "shard_blocks",
+            "type": "integer"
+          },
+          {
+            "name": "eligible_validators",
+            "type": "integer"
+          },
+          {
+            "name": "active_committees",
+            "type": "integer"
+          },
+          {
+            "name": "committee_recoveries",
+            "type": "integer"
+          },
+          {
+            "name": "finality_certificates",
+            "type": "integer"
+          },
+          {
+            "name": "root_commitments",
+            "type": "integer"
+          },
+          {
+            "name": "receipts",
+            "type": "integer"
+          },
+          {
+            "name": "terminal_failures",
+            "type": "integer"
+          },
+          {
+            "name": "reward_events",
+            "type": "integer"
+          },
+          {
+            "name": "quarantine_events",
+            "type": "integer"
+          },
+          {
+            "name": "slashing_events",
+            "type": "integer"
+          },
+          {
+            "name": "reconfiguration_events",
+            "type": "integer"
+          },
+          {
+            "name": "evidence_count",
+            "type": "integer"
+          },
+          {
+            "name": "finality_latency_sum",
+            "type": "integer"
+          },
+          {
+            "name": "finality_latency_n",
+            "type": "integer"
+          },
+          {
+            "name": "receipt_latency_sum",
+            "type": "integer"
+          },
+          {
+            "name": "receipt_latency_n",
+            "type": "integer"
+          },
+          {
+            "name": "reward_gini_bp",
+            "type": "integer"
+          },
+          {
+            "name": "reward_hhi_bp",
+            "type": "integer"
+          },
+          {
+            "name": "nakamoto_coefficient",
+            "type": "integer"
+          },
+          {
+            "name": "owner_concentration_bp",
+            "type": "integer"
+          },
+          {
+            "name": "shard_load_std_bp",
+            "type": "integer"
+          }
+        ]
+      }
+    },
+    {
+      "name": "spos_msc_v4_smoke_2",
+      "path": "data/raw/cpn/SPoS_MSC_v4_smoke_2.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 1138,
+      "hash": "sha256:a0c0ccd7f2874f514c7b3be8f9559f23bce2e98e9f706dfca9aeae18e1f23326",
+      "schema": {
+        "fields": [
+          {
+            "name": "experiment_id",
+            "type": "string"
+          },
+          {
+            "name": "factor_id",
+            "type": "string"
+          },
+          {
+            "name": "level_id",
+            "type": "string"
+          },
+          {
+            "name": "configuration",
+            "type": "string"
+          },
+          {
+            "name": "scenario_id",
+            "type": "integer"
+          },
+          {
+            "name": "run_id",
+            "type": "integer"
+          },
+          {
+            "name": "base_seed",
+            "type": "integer"
+          },
+          {
+            "name": "model_time",
+            "type": "integer"
+          },
+          {
+            "name": "stop_code",
+            "type": "string"
+          },
+          {
+            "name": "submitted_tx",
+            "type": "integer"
+          },
+          {
+            "name": "prepared_tx",
+            "type": "integer"
+          },
+          {
+            "name": "routed_tx",
+            "type": "integer"
+          },
+          {
+            "name": "cross_shard_tx",
+            "type": "integer"
+          },
+          {
+            "name": "shard_blocks",
+            "type": "integer"
+          },
+          {
+            "name": "eligible_validators",
+            "type": "integer"
+          },
+          {
+            "name": "active_committees",
+            "type": "integer"
+          },
+          {
+            "name": "committee_recoveries",
+            "type": "integer"
+          },
+          {
+            "name": "finality_certificates",
+            "type": "integer"
+          },
+          {
+            "name": "root_commitments",
+            "type": "integer"
+          },
+          {
+            "name": "receipts",
+            "type": "integer"
+          },
+          {
+            "name": "terminal_failures",
+            "type": "integer"
+          },
+          {
+            "name": "reward_events",
+            "type": "integer"
+          },
+          {
+            "name": "quarantine_events",
+            "type": "integer"
+          },
+          {
+            "name": "slashing_events",
+            "type": "integer"
+          },
+          {
+            "name": "reconfiguration_events",
+            "type": "integer"
+          },
+          {
+            "name": "evidence_count",
+            "type": "integer"
+          },
+          {
+            "name": "finality_latency_sum",
+            "type": "integer"
+          },
+          {
+            "name": "finality_latency_n",
+            "type": "integer"
+          },
+          {
+            "name": "receipt_latency_sum",
+            "type": "integer"
+          },
+          {
+            "name": "receipt_latency_n",
+            "type": "integer"
+          },
+          {
+            "name": "reward_gini_bp",
+            "type": "integer"
+          },
+          {
+            "name": "reward_hhi_bp",
+            "type": "integer"
+          },
+          {
+            "name": "nakamoto_coefficient",
+            "type": "integer"
+          },
+          {
+            "name": "owner_concentration_bp",
+            "type": "integer"
+          },
+          {
+            "name": "shard_load_std_bp",
+            "type": "integer"
+          }
+        ]
+      }
+    }
+  ]
+}

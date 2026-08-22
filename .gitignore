@@ -1,13 +1,36 @@
+# Python
 .venv/
 __pycache__/
 *.py[cod]
 .pytest_cache/
-.ruff_cache/
-.env
-outputs/
-dist/
-build/
-*.log
+.coverage
+htmlcov/
+
+# Generated analysis
+analysis/reproduced/
+analysis/ci-output/
+
+# LaTeX build products
+manuscript/*.aux
+manuscript/*.bbl
+manuscript/*.blg
+manuscript/*.fdb_latexmk
+manuscript/*.fls
+manuscript/*.log
+manuscript/*.out
+manuscript/*.synctex.gz
+manuscript/*.toc
+manuscript/*.lof
+manuscript/*.lot
+
+# CPN Tools local output folders
+experiments/cpn-tools/local-output/
+experiments/cpn-tools/native-replication-reports/*
+!experiments/cpn-tools/native-replication-reports/README.md
+
+# OS/editor
 .DS_Store
-.idea/
+Thumbs.db
 .vscode/
+.idea/
+*.swp

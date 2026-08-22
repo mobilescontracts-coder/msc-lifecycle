@@ -1,0 +1,16 @@
+metric,archived_v3,v4_default_audit,difference,exact_match
+submitted_tx,19600,19600,0,True
+prepared_tx,18941,18941,0,True
+routed_tx,18941,18941,0,True
+cross_shard_tx,4995,4987,-8,False
+shard_blocks,18767,18767,0,True
+finality_certificates,18767,18767,0,True
+root_commitments,18767,18767,0,True
+receipts,18187,18187,0,True
+terminal_failures,1413,1413,0,True
+reward_events,94912,94899,-13,False
+committee_recoveries,115,115,0,True
+quarantine_events,200,200,0,True
+slashing_events,200,200,0,True
+reconfiguration_events,1401,1393,-8,False
+evidence_count,316374,316366,-8,False

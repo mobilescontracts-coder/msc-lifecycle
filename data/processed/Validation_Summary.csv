@@ -1,0 +1,5 @@
+dataset,rows,complete_rows,groups,bad_group_sizes,run_id_group_violations,lifecycle_violations,terminal_accounting_violations,duplicate_keys,base_seed_values,status
+smoke,2,2,1,0,0,0,0,0,626,PASS
+pilot,72,72,24,0,0,0,0,0,626,PASS
+default,700,700,7,0,0,0,0,0,626,PASS
+ofat,2400,2400,24,0,0,0,0,0,626,PASS
