@@ -18,8 +18,8 @@ This repository contains the reproducibility artefacts for the SPoS-MSC study: t
 | Statistical analysis | Validation, descriptive statistics, omnibus tests, contrasts, figures | Included and executable |
 | Manuscript | Complete Elsevier CAS LaTeX project and compiled PDF | Included |
 | Runtime-emulator summary | Seven scenario means and reported correlations | Included |
-| Runtime-emulator source/raw runs | Python/FastAPI source and 700 raw runtime rows |
-| Native CPN replication folders | CPN Tools report/output directories |
+| Runtime-emulator source/raw runs | Python/FastAPI source and 700 raw runtime rows | Included |
+| Native CPN replication folders | CPN Tools report/output directories | Included |
 
 The repository is therefore reproducible at the **native CPN CSV, statistical-analysis, figure, table, and manuscript-build levels**. The two missing provenance components are documented rather than fabricated. See [docs/REPRODUCIBILITY_STATUS.md](docs/REPRODUCIBILITY_STATUS.md).
 
