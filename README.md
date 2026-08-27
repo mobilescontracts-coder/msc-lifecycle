@@ -1,4 +1,4 @@
-# SPoS-MSC
+# SPoS-MSC: A complete mobile smart contracts lifecycle using incentive-aware Proof-of-Stake governance
 
 **Executable modelling of a sharded mobile smart-contract lifecycle with incentive-aware Proof-of-Stake governance**
 
