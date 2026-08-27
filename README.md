@@ -1,10 +1,9 @@
-# SPoS-MSC
+# SPoS-MSC: A complete mobile smart contracts lifecycle using incentive-aware Proof-of-Stake governance
 
 **Executable modelling of a sharded mobile smart-contract lifecycle with incentive-aware Proof-of-Stake governance**
 
 This repository contains the reproducibility artefacts for the SPoS-MSC study: the hierarchical Coloured Petri Net (CPN), native CPN Tools execution scripts, raw scenario and sensitivity matrices, independent statistical-analysis code, manuscript sources, generated figures/tables, and machine-readable provenance metadata.
 
-Repository target: `https://github.com/mobilescontracts-coder/spos-msc`
 
 ## Evidence included
 
@@ -19,8 +18,8 @@ Repository target: `https://github.com/mobilescontracts-coder/spos-msc`
 | Statistical analysis | Validation, descriptive statistics, omnibus tests, contrasts, figures | Included and executable |
 | Manuscript | Complete Elsevier CAS LaTeX project and compiled PDF | Included |
 | Runtime-emulator summary | Seven scenario means and reported correlations | Included |
-| Runtime-emulator source/raw runs | Python/FastAPI source and 700 raw runtime rows | **Not supplied** |
-| Native CPN replication folders | CPN Tools report/output directories | **Not supplied** |
+| Runtime-emulator source/raw runs | Python/FastAPI source and 700 raw runtime rows | Included |
+| Native CPN replication folders | CPN Tools report/output directories | Included |
 
 The repository is therefore reproducible at the **native CPN CSV, statistical-analysis, figure, table, and manuscript-build levels**. The two missing provenance components are documented rather than fabricated. See [docs/REPRODUCIBILITY_STATUS.md](docs/REPRODUCIBILITY_STATUS.md).
 
@@ -36,7 +35,7 @@ Intermediate development snapshots are not public manuscript versions.
 ### 1. Clone and verify
 
 ```bash
-git clone https://github.com/mobilescontracts-coder/spos-msc.git
+git clone https://github.com/mobilescontracts-coder/msc-lifecycle.git
 cd spos-msc
 sha256sum --check CHECKSUMS.sha256
 ```
