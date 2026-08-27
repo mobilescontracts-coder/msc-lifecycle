@@ -35,7 +35,7 @@ Intermediate development snapshots are not public manuscript versions.
 ### 1. Clone and verify
 
 ```bash
-git clone https://github.com/mobilescontracts-coder/spos-msc.git
+git clone https://github.com/mobilescontracts-coder/msc-lifecycle.git
 cd spos-msc
 sha256sum --check CHECKSUMS.sha256
 ```
